@@ -13,6 +13,7 @@ Color opcional #E0AAFF
 ## Importante
 
 - Crear una rama con el nombre del componente
+
 - Usar [HTML semantico](https://www.arkaitzgarro.com/html5/capitulo-2.html)
 
 ## Recomendaciones
