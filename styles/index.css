@@ -19,9 +19,21 @@
   border-radius: 5px;
 }
 .main_form{
-  display: none;
+  display: flex;  
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+.main_form_labelName{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#img_upload{
+  width: 30px;
+  height:30px;
+}
 .main_div{
   display: flex;
   flex-direction: column;
