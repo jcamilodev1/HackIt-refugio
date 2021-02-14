@@ -11,7 +11,7 @@
   width: 320px;
 }
 
-.main_button_publicar{
+.main_publicar{
   background-color: var(--Color-principal);
   width: 300px;
   color: white;
@@ -69,7 +69,8 @@
   font-family: var(--font-family);
   color: white;
   font-size: 10px;
-  height: 15px
+  height: 15px;
+  padding-top: 5px;
 }
 
 .main_div_info{

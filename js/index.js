@@ -1,5 +1,4 @@
- 
-  var database = firebase.database();
+var database = firebase.database();
    
 database.ref('mascotas').on('value', function(datos) {
    var info = datos.val()
@@ -36,9 +35,3 @@ $("#guardarForm").click(() => {
 
 })
 
-/*function enviar() {
-  
-   document.getElementById("show_form").style.display = "none";
- }
- 
-*/

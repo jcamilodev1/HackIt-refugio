@@ -1,17 +1,18 @@
-window.onload = inicializar;
+/*window.onload = inicializar;
 var fichero;
 var storageRef;
-var uploadTask;
 
 function inicializar(){
-    fichero = document.getElementById("fichero");
-    fichero.addEventListener("change", subirImg, false);
-
+    fichero = document.getElementById('fichero');
+    fichero.addEventListener('change', subirImagen, false);
     storageRef = firebase.storage().ref();
 }
 
-function subirImg(){
-    var imgSelec = fichero.files[0].name;
-    uploadTask = storageRef.child('images/' + imgSelec.name).put(imgSelec);
-        
-};
+function subirImagen(){
+    var imagenAsubir = fichero.files[0].name;
+    var uploadTask = storageRef.child('images/' + imagenAsubir.name).put(imagenAsubir);
+    uploadTask.pause();
+    uploadTask.resume();
+    uploadTask.cancel();
+}*/
+
