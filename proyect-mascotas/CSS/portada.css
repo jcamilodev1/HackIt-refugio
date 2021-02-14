@@ -1,0 +1,43 @@
+:root {
+  --Color-principal : #240046 ;
+  --Color-secundario : #7B2CBF;
+  --Color-opcional #E0AAFF;
+  --font-family: 'Roboto', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+html{
+  font-family: var(--font-family);
+}
+
+.main {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #240046;
+  color: white;
+}
+.main__container {
+  margin: 0 auto;
+  padding: 20px;
+}
+.main__container h1 {
+  text-align: center;
+}
+.main__container a {
+  display: block;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: var(--Color-secundario);
+  border-radius: 20px;
+}
