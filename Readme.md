@@ -23,4 +23,4 @@ Color opcional #E0AAFF
 
 ## Integrantes
 
-- [JCamiloDev](https://github.com/jcamilodev1)
+- [JCamiloDev](https://github.com/jcamilodev
