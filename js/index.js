@@ -1,22 +1,9 @@
 var database = firebase.database();
-   
-database.ref('mascotas').on('value', function(datos) {
-   var info = datos.val()
-   $(".main_div_name").text(info.nombre );
-})
 
-database.ref('mascotas').on('value', function(datos) {
-   var info = datos.val()
-   $(".main_div_info").text(info.info);
-})
-
-database.ref('mascotas').on('value', function(datos) {
-   var info = datos.val()
-   $(".main_div_contacto").text(info.contacto);
-})
-
-//funcion guardar un dato nuevo desde el formulario 
 $("#guardarForm").click(() => {
+
+   addItemHTML(); 
+
    var mascota = $(".main_form_inputName").val()
    var telefono = $(".main_form_phone").val()
    var info = $(".main_form_inputDescripcion").val()
@@ -29,9 +16,17 @@ $("#guardarForm").click(() => {
    $(".main_form_phone").val("")  
    $(".main_form_inputDescripcion").val("")
    $(".main_form_contacto").val("")
-   $("#fichero").val("")
+   $("#fichero").val("") 
    
-   $("#show_form").style("display:none")
-
 })
 
+function addItemHTML(){
+   const card = document.getElementById('card');
+   const nombre = document.getElementsByClassName('main_form_inputName').value;
+   const info = document.getElementsByClassName('main_form_inputDescripcion').value;
+   const contacto = document.getElementsByClassName('main_form_phone').value;
+   const imagen = document.getElementById('fichero');
+
+   const oldHTML = card.innerHTML;
+   card.innerHTML = `${oldHTML} <h3>${nombre}<h3> <br/> <p>${info}</p> <br/> <p> ${contacto} </p> <br/> <span> ${imagen} </span>`
+}
