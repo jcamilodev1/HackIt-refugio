@@ -1,9 +1,21 @@
 var database = firebase.database();
 
+
+/*database.ref('mascotas').once('value', function(datos) {
+   var info = datos.val()
+   $("#petName").text(info.mascota);   
+   $("#petImg").text(info.url); 
+   $("#petDescription").text(info.info); 
+   $("#yourName").text(info.contacto); 
+   $("#yourPhone").text(info.telefono); 
+
+   
+})*/
+
+
+
 $("#guardarForm").click(() => {
-
-   addItemHTML(); 
-
+ 
    var mascota = $(".main_form_inputName").val()
    var telefono = $(".main_form_phone").val()
    var info = $(".main_form_inputDescripcion").val()
@@ -20,13 +32,3 @@ $("#guardarForm").click(() => {
    
 })
 
-function addItemHTML(){
-   const card = document.getElementById('card');
-   const nombre = document.getElementsByClassName('main_form_inputName').value;
-   const info = document.getElementsByClassName('main_form_inputDescripcion').value;
-   const contacto = document.getElementsByClassName('main_form_phone').value;
-   const imagen = document.getElementById('fichero');
-
-   const oldHTML = card.innerHTML;
-   card.innerHTML = `${oldHTML} <h3>${nombre}<h3> <br/> <p>${info}</p> <br/> <p> ${contacto} </p> <br/> <span> ${imagen} </span>`
-}
