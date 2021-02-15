@@ -1,6 +1,5 @@
 var database = firebase.database();
 
-
 /*database.ref('mascotas').once('value', function(datos) {
    var info = datos.val()
    $("#petName").text(info.mascota);   
