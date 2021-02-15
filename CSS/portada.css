@@ -23,7 +23,7 @@ html {
   color: white;
 }
 .main__container {
-  margin: 0 auto;
+  margin: 0px auto;
   padding: 20px;
 }
 .main__container h1 {
@@ -40,9 +40,9 @@ html {
   padding: 10px 20px;
   background-color: var(--Color-secundario);
   border-radius: 20px;
-  box-shadow: 1px 1px 100px 2px black;
 }
 .entra:hover {
   background-color: var(--Color-opcional);
-  box-shadow: 1px 1px 10px black inset;
+  box-shadow: 1px 1px 100px 2px black;
+
 }

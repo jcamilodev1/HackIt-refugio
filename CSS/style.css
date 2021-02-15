@@ -109,13 +109,11 @@ h2 {
 #banner h2 {
   font-size: 28px;
 }
-#bienvenidos {
-  text-align: center;
-}
 .blog .contenedor {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 .blog article {
   margin: 15px;
@@ -125,13 +123,16 @@ h2 {
   max-width: 280px;
   box-shadow: 0px 0px 10px 3px #333;
   transition: 0.3s;
+  margin-bottom: 10px;
 }
 .blog img:hover {
   transform: scale(1.1);
 }
-.blog h3,
-h4 {
+.blog h4 {
   text-align: center;
+}
+.blog h2 {
+  margin-top: -15px;
 }
 
 footer .contenedor {
@@ -195,11 +196,29 @@ footer .contenedor {
   #banner img {
     margin-top: -150px;
   }
+  .menu {
+    height: 50px;
+  }
+  .menu a {
+    margin-top: -2px;
+  }
 }
-
+@media (min-width:280px) {
+  h1 {
+    font-size: 30px;
+  }
+}
 .animals-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
+.animals-container h4, a  {
+  margin: 13px;
+}
+.animals-container p {
+  margin-bottom: 15px;
+}
+
