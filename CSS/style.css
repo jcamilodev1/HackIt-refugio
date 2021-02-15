@@ -115,6 +115,7 @@ h2 {
 .blog .contenedor {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .blog article {
   margin: 15px;
@@ -194,4 +195,11 @@ footer .contenedor {
   #banner img {
     margin-top: -150px;
   }
+}
+
+.animals-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

@@ -29,7 +29,7 @@ html {
 .main__container h1 {
   text-align: center;
 }
-.main__container a {
+.entra {
   display: block;
   width: 80%;
   text-align: center;
@@ -42,7 +42,7 @@ html {
   border-radius: 20px;
   box-shadow: 1px 1px 100px 2px black;
 }
-.main__container a:hover {
+.entra:hover {
   background-color: var(--Color-opcional);
   box-shadow: 1px 1px 10px black inset;
 }
