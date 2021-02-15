@@ -1,15 +1,15 @@
 :root {
-  --Color-principal : #240046 ;
-  --Color-secundario : #7B2CBF;
-  --Color-opcional #E0AAFF;
-  --font-family: 'Roboto', sans-serif;
+  --Color-principal: #240046;
+  --Color-secundario: #7b2cbf;
+  --Color-opcional: #c568fa;
+  --font-family: "Roboto", sans-serif;
 }
 
 * {
   padding: 0;
   margin: 0;
 }
-html{
+html {
   font-family: var(--font-family);
 }
 
@@ -25,7 +25,6 @@ html{
 .main__container {
   margin: 0 auto;
   padding: 20px;
-
 }
 .main__container h1 {
   text-align: center;
@@ -41,4 +40,9 @@ html{
   padding: 10px 20px;
   background-color: var(--Color-secundario);
   border-radius: 20px;
+  box-shadow: 1px 1px 100px 2px black;
+}
+.main__container a:hover {
+  background-color: var(--Color-opcional);
+  box-shadow: 1px 1px 10px black inset;
 }
