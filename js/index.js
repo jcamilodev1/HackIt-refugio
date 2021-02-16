@@ -1,4 +1,14 @@
 var database = firebase.database();
+const addHtml = () => {
+  const card = document.getElementById("card");
+  const petName = document.querySelector("#petName").value;
+  const desciption = document.querySelector("#info").value;
+  const phone = document.querySelector("#tel").value;
+  const name = document.querySelector("#nombre").value;
+  const imagen = document.querySelector("#img_upload").src;
+  const oldHTML = card.innerHTML;
+  card.innerHTML = `${oldHTML} <h3>${petName}<h3> <br/> <p>${desciption}</p> <br/> <p> ${phone} </p> <p>Dueño: <span>${name}</span></span></p><img src="${imagen}" alt="img-pet"/> `;
+};
 
 /*database.ref('mascotas').once('value', function(datos) {
    var info = datos.val()
