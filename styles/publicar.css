@@ -4,7 +4,7 @@
   --Color-opcional #E0AAFF;
   --font-family: 'Roboto', sans-serif;
 }
-.main--public{
+.main{
   display: flex;
   flex-direction: column;
   justify-content: space-between;  

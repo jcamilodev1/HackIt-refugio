@@ -1,129 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/index.css" />
-    <title>Mi Refugio -- HackIt</title>
+    <title>Mascotas-Tips</title>
+    <link rel="stylesheet" href="./CSS/portada.css" />
   </head>
   <body>
-    <header></header>
     <main class="main">
-      <h3 class="main_publicar">PUBLICAR</h3>
-
-      <div id="show_form" class="main_form">
-
-        <div class="main_form_labelName">
-        <label>Nombre:</label>
-        <input
-          type="text"
-          class="main_form_inputName"
-          placeholder="Ingresa el nombre de tu mascota..."
-        />
+      <div class="main__container">
+        <h1>¿Perdiste tu Mascota?</h1>
+        <div class="container_img">
+          <img src="./img/lady-playing-with-pet-dog-1797640-0.svg" alt="" />
         </div>
-
-        <div>
-        <label>Descripción:</label>
-        <input
-          type="text"
-          class="main_form_inputDescripcion"
-          placeholder="Cuentanos sobre tu mascota..."
-        />
-        </div>
-
-        <div>        
-        <label>Telefono de contacto:</label>
-        <input type="text" class="main_form_phone" placeholder="ingresa tu telefono">
-        </div>
-        <div>        
-          <label>Nombre de contacto:</label>
-          <input type="text" class="main_form_contacto" placeholder="ingresa tu nombre">
-          </div>
-
-         <div> 
-          <form id="form_img">
-            <label class='btn btn-file'>
-              <input type="file" name="fichero" id="fichero" value="" class="hidden">
-              <img src="img/upload.png" class="img-responsive" alt="descargar" id="img_upload">
-            </label>
-          </form>  
-        </div>
-        
-        
-        <button  id="guardarForm">Enviar</button>
-        
-      
+        <a href="./encuentrame.html" class="entra">¡Encuentrala Aqui!</a>
       </div>
-
-     
-      <div class="main_div">
-        <h3 class="main_div_name">Gatito</h3>
-        <div class="main_div_general">
-          <img class="main_div_img" src="img/cuatro.jpg" id="img_input"/>
-          <iframe
-            class="main_div_map"
-            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3405.1837568037213!2d-64.19775318500118!3d-31.40906290304035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1splaza%20colon!5e0!3m2!1ses!2sar!4v1613233057767!5m2!1ses!2sar"
-            width="100"
-            height="100"
-            frameborder="0"
-            style="border: 0"
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-          ></iframe>
-        </div>
-        <p class="main_div_info">
-          info Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Sapiente, voluptatum.
-        </p>
-        <a
-          class="main_div_contacto"
-          href="https://api.whatsapp.com"
-          target="_blanck"
-          >Contacto<i class="fab fa-whatsapp"></i
-        ></a>
-      </div>
-      <div id="card"></div>
     </main>
-    <footer></footer>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
-
-    <script>
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      var firebaseConfig = {
-        apiKey: "AIzaSyBk6ylUpY2ARmx0SjWo8guxWnRQExLeWqk",
-        authDomain: "hackit-mirefugio.firebaseapp.com",
-        databaseURL: "https://hackit-mirefugio-default-rtdb.firebaseio.com",
-        projectId: "hackit-mirefugio",
-        storageBucket: "hackit-mirefugio.appspot.com",
-        messagingSenderId: "769626010729",
-        appId: "1:769626010729:web:c76ff94556bf5335819ef8",
-        measurementId: "G-TD7GE52D2J",
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-      </script>
-      <script src="js/index.js"></script>
-      
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-   
   </body>
 </html>
