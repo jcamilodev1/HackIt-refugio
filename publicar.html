@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/publicar.css" />
+    <link rel="stylesheet" href="./CSS/portada.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/fontello.css" />
+    <title>Mi Refugio -- HackIt</title>
+  </head>
+  <body>
+    <header>
+      <div class="contenedor">
+        <h1 class="icon-guidedog">Mis Mascotas</h1>
+        <input id="menu-bar" type="checkbox" />
+        <label class="icon-menu" for="menu-bar"></label>
+        <nav class="menu">
+          <a href="./index.html">Inicio</a>
+          <a href="./encuentrame.html">Encuentra tu Mascota</a>
+          <a href="./tips.html">Tips</a>
+        </nav>
+      </div>
+    </header>
+    <main class="main--public">
+      <h3 class="main_publicar">PUBLICAR</h3>
+
+      <div id="show_form" class="main_form">
+        <div class="main_form_labelName">
+          <label>Nombre:</label>
+          <input
+            type="text"
+            class="main_form_inputName"
+            id="petName"
+            placeholder="Ingresa el nombre de tu mascota..."
+          />
+        </div>
+
+        <div>
+          <label>Descripción:</label>
+          <input
+            type="text"
+            class="main_form_inputDescripcion"
+            id="info"
+            placeholder="Cuentanos sobre tu mascota..."
+          />
+        </div>
+
+        <div>
+          <label>Telefono de contacto:</label>
+          <input
+            type="tel"
+            class="main_form_phone"
+            id="tel"
+            placeholder="ingresa tu telefono"
+          />
+        </div>
+        <div>
+          <label>Nombre de contacto:</label>
+          <input
+            type="text"
+            class="main_form_contacto"
+            id="nombre"
+            placeholder="ingresa tu nombre"
+          />
+        </div>
+
+        <div>
+          <form id="form_img">
+            <label class="btn btn-file">
+              <input
+                type="file"
+                name="fichero"
+                id="fichero"
+                value=""
+                class="hidden"
+              />
+              <img
+                src="img/upload.png"
+                class="img-responsive"
+                alt="descargar"
+                id="img_upload"
+              />
+            </label>
+          </form>
+        </div>
+
+        <button id="guardarForm">Enviar</button>
+        <section class="blog">
+          <h2>¡Encuentra a tu mejor amigo!</h2>
+          <div class="contenedor" id="info-container">
+            <article class="animals-container">
+              <img
+                src="data:image/jpeg;base64,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"
+                alt="VacaTeam"
+              />
+              <h4>Hola soy Firulais y estoy pérdido</h4>
+              <p>Tengo 5 años y soy un labrador de color negro</p>
+              <a
+                href="https://api.whatsapp.com/send?phone=3186011587&text=hola,%20encontre%20tu%20mascota"
+                class="entra"
+                >Contacta a la familia</a
+              >
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!--se muestran los datos-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyBk6ylUpY2ARmx0SjWo8guxWnRQExLeWqk",
+        authDomain: "hackit-mirefugio.firebaseapp.com",
+        databaseURL: "https://hackit-mirefugio-default-rtdb.firebaseio.com",
+        projectId: "hackit-mirefugio",
+        storageBucket: "hackit-mirefugio.appspot.com",
+        messagingSenderId: "769626010729",
+        appId: "1:769626010729:web:c76ff94556bf5335819ef8",
+        measurementId: "G-TD7GE52D2J",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <script src="js/index.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+      integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+      integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

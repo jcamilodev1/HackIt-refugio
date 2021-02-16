@@ -1,0 +1,92 @@
+:root {
+  --Color-principal : #240046 ;
+  --Color-secundario : #7B2CBF;
+  --Color-opcional #E0AAFF;
+  --font-family: 'Roboto', sans-serif;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+  width: 320px;
+}
+
+.main_publicar{
+  background-color: var(--Color-principal);
+  width: 300px;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.main_form{
+  display: flex;  
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main_form_labelName{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#img_upload{
+  width: 30px;
+  height:30px;
+}
+.main_div{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Color-secundario);
+  margin: 10px;
+  height: 250px;
+  border-radius: 5px;
+  
+}
+
+.main_div_img{
+  height: 100px;
+  margin: 5px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+.main_div_map{
+  height: 100px;
+  margin: 5px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+.main_div_general{
+  width: 60%;
+  display: flex;
+  flex-direction: row;  
+}
+
+.main_div_name{
+  text-align: center;
+  font-family: var(--font-family);
+  color: white;
+  font-size: 10px;
+  height: 15px;
+  padding-top: 5px;
+}
+
+.main_div_info{
+  text-align: justify;
+  font-family: var(--font-family);
+  color: white;
+  font-size: 10px;
+  padding:10px;
+  background-color: var(--Color-secundario);  
+}
+
+.main_div_contacto{
+  text-align: right;
+  font-family: var(--font-family);
+  color: white;
+  font-size: 10px;
+  padding:8px;
+  background-color: var(--Color-secundario);  
+}
